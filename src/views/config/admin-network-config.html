@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modbus Gateway Manager - Admin Configuration</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../../utils/data.js"></script>
+    <script defer src="../../utils/language.js"></script>
+    <script defer type="module" src="../../controller/config/admin-network-config.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="../../assets/images/cevie.png" alt="Cevie">
+            </div>
+            <ul>
+                <li class="clickable" id="sidebar-general">General</li>
+                <li class="selected"  id="sidebar-network">Network</li>
+            </ul>
+        </div>
+        <div class="config-content">
+            <div class="input-list">
+                <div class="content-container">
+                    <h2>Network Configuration</h2>
+                    <div class="input-item">
+                        <label class="input-label" for="input1">Default IP address</label>
+                        <input type="text" id="input1" class="input-field" placeholder="example:192.168.1.5">
+                    </div>
+    
+                    <div class="input-item">
+                        <label class="input-label" for="input2">Default Netmask</label>
+                        <input type="text" id="input2" class="input-field" placeholder="example:255.255.255.0">
+                    </div>
+    
+                    <div class="input-item">
+                        <label class="input-label" for="input3">Default Gateway</label>
+                        <input type="text" id="input3" class="input-field" placeholder="example:192.168.1.1">
+                    </div>
+                </div>
+                <div class="button-container button-config">
+                    <button class="button left-button" id="save-button">Save & Exit</button>
+                    <button class="button right-button" id="previous-button">Previous</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

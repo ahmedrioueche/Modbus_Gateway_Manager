@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modbus Gateway Manager - Configuration</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../../utils/data.js"></script>
+    <script defer src="../../utils/language.js"></script>
+    <script defer type="module" src="../../controller/config/serial-config.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="../../assets/images/cevie.png" alt="Cevie">
+            </div>
+            <ul>
+                <li class="clickable" id="sidebar-general">General</li>
+                <li class="clickable" id="sidebar-mode">Mode</li>
+                <li class="selected" id="sidebar-serial">Serial</li>
+                <li class="clickable" id="sidebar-network">Network</li>
+            </ul>
+        </div>
+
+        <div class="config-content">
+            <div class="input-list">
+                <div class="content-container">
+                    <h2>Configure Serial</h2>
+                    <div class="input-item">
+                        <label class="input-label">Baudrate</label>
+                        <select id="select-baud" class="select-field">
+                            <option>2400</option>
+                            <option selected>9600</option>
+                            <option>19200</option>
+                            <option>38400</option>
+                            <option>115200</option>
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <label class="input-label">Parity</label>
+                        <select id="select-parity" class="select-field">
+                            <option selected>None</option>
+                            <option>Odd</option>
+                            <option>Even</option>
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <label class="input-label" id="stop-bits-label">Stop bits</label>
+                        <select id="select-stopbits" class="select-field">
+                            <option selected>1</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <label class="input-label" id="data-size-label">Data size</label>
+                        <select id="select-datasize" class="select-field">
+                            <option selected>8</option>
+                            <option>9</option>
+                        </select>
+                    </div>
+                    <div class="input-item slave-item">
+                        <label class="input-label" for="slave-id"><span class="slave" id="slave-id-span"></span></label>
+                        <input type="text" id="slave-id" class="input-field" placeholder="example:5">
+                    </div>
+                </div>
+                <div class="button-container config">
+                    <button class="button left-button" id="next-button">Next</button>
+                    <button class="button right-button" id="previous-button">Previous</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

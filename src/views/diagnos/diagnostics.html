@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Modbus Gateway Manager - Diagnostics</title>
+        <link rel="stylesheet" href="../../styles/main.css" />
+        <script defer src="../../utils/helper.js"></script>
+        <script defer src="../../utils/data.js"></script>
+        <script defer src="../../utils/language.js"></script>
+        <script defer src="../../controller/diagnos/packet.js"></script>
+        <script defer type="module" src="../../controller/diagnos/diagnostics.js"></script>
+    </head>
+
+    <body>
+        <div class="main-container diagnostics">
+            <div class="diagnostics-container">
+                <div class="table-header">
+                    <div class="column" id="column-1">No.</div>
+                    <div class="column" id="column-2">Time</div>
+                    <div class="column" id="column-3">Source</div>
+                    <div class="column" id="column-4">Destination</div>
+                    <div class="column" id="column-5">Length</div>
+                    <div class="column" id="column-6">Info</div>
+                </div>
+                <div class="table-rows packet-container" id="packet-container">
+                    
+                </div>
+            </div>
+            <div class="bottom-container">
+                <div class="control-container">
+                    <div class="control-button" id="start"><img src="../../assets/icons/play.png" alt=""></div>
+                    <div class="control-button stop-button-disabled" id="stop"><img src="../../assets/icons/stop.png" alt=""></div>
+                    <div class="control-button" id="up"><img src="../../assets/icons/up-arrow.png" alt=""></div>
+                    <div class="control-button" id="down"><img src="../../assets/icons/down-arrow.png " alt=""></div>
+                    <div class="control-button save-icon" id="save"><img src="../../assets/icons/save.png " alt=""></div>
+                    <div class="control-button" id="trash"><img src="../../assets/icons/delete.png " alt=""></div>
+                    <div class="control-button search" id="stop"><img src="../../assets/icons/tool.png" alt=""></div>
+                    <form class="input-item diag-filter">
+                        <input type="text" id="input" class="input-field" placeholder="Filter">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="button-container">
+                    <button class="button right-button diagnose-button" id="close-button">Quit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

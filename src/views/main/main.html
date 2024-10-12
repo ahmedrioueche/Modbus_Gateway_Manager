@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modbus Gateway Manager</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <script defer src="../../utils/data.js"></script>
+    <script defer src="../../utils/language.js"></script>
+    <script defer type="module" src="../../controller/main/main.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="menu-container">
+            <img src="../../assets/images/cevie.png" alt="Cevie">
+            <button id="refresh-button" class="button menu"></button>
+            <button id="configure-button" class="button menu" ></button>
+            <button id="diagnose-button" class="button menu" ></button>
+            <button id="settings-button" class="button menu"></button>
+            <button id="help-button" class="button menu"></button>
+            <button id="exit-button" class="button menu"></button>
+        </div>
+        <div class="search-container">
+            <div class="table-header">
+                <div class="column" id="column-1"></div>
+                <div class="column" id="column-2"></div>
+                <div class="column" id="column-3"></div>
+            </div>
+            <div class="table-rows" id="device-container">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

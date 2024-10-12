@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modbus Gateway Manager - Packet Details</title>
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <script defer src="../../utils/helper.js"></script>
+    <script defer src="../../utils/data.js"></script>
+    <script defer src="../../utils/language.js"></script>
+    <script defer type="module" src="../../controller/diagnos/packetDetails.js"></script>
+</head>
+
+<body>
+    <div class="packet-details-main-container">
+        <div class="packet-details">
+            <table>
+                <tr>
+                    <td><strong>Packet number:</strong></td>
+                    <td id="number" class="packet-detail-span"></td>
+                </tr>
+                <tr>
+                    <td><strong>Time:</strong></td>
+                    <td id="time" class="packet-detail-span"></td>
+                </tr>
+                <tr>
+                    <td><strong>Source:</strong></td>
+                    <td id="source"></td>
+                </tr>
+                <tr>
+                    <td><strong>Destination:</strong></td>
+                    <td id="destination"></td>
+                </tr>
+                <tr>
+                    <td><strong>Length:</strong></td>
+                    <td id="length"></td>
+                </tr>
+                <tr class="rawData-row">
+                    <td class="data"><strong>Raw Data:</strong></td>
+                    <td class="data-container">
+                        <div id="data" class="data-content"></div>
+                    </td>
+                </tr>     
+            </table>
+        </div>
+        <div class="button-container">
+            <button class="button right-button diagnose-details-button" id="close-button">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>

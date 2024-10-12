@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Modbus Gateway Manager</title>
+  <link rel="stylesheet" />
+  <link rel="stylesheet" href="../../styles/login.css" />
+  <script src="../../utils/data.js"></script>
+  <script src="../../utils/language.js"></script>
+  <script type="module" src="../../controller/auth/login.js"></script>
+</head>
+
+<body>
+  <div class="background-container">
+    <div class="login-container">
+      <div class="login-header">
+        <img src="../../assets/images/cevie.png" alt="Cevie">
+      </div>
+      <div class="form-container">
+        <form class="login-form">
+          <h3>LOGIN</h3>
+          <div class="username-container" id="username">
+            <input id="username-input-box" class="input-box" type="text" placeholder="Enter username">
+          </div>
+          <div class="password-container" id="password">
+            <input id="password-input-box" class="input-box" type="password" placeholder="Enter password">
+          </div>
+          <button id="login-button" class="button" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

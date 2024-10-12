@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modbus Gateway Manager - Configuration</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../../utils/data.js"></script>
+    <script defer src="../../utils/language.js"></script>
+    <script defer type="module" src="../../controller/config/mode-config.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <img src="../../assets/images/cevie.png" alt="Cevie">
+            </div>
+            <ul>
+                <li class="clickable" id="sidebar-general">General</li>
+                <li class="selected" id="sidebar-mode">Mode</li>
+                <li class="clickable" id="sidebar-serial">Serial</li>
+                <li class="clickable"  id="sidebar-network">Network</li>
+            </ul>
+        </div>
+
+        <div class="config-content mode">
+            <div class="input-list mode">
+                <div class="content-container">
+                    <h2>Configure Operation Mode</h2>
+                    <div class="tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Port1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Port2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Port3</a>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="checkbox-list">
+                        <div class="checkbox-list-item">
+                            <input type="radio" id="radio1" name="mode" class="radio-input">
+                            <label for="radio1" class="radio-label">RTU Server Mode</label>
+                        </div>
+                        <div class="checkbox-list-item">
+                            <input type="radio" id="radio2" name="mode" class="radio-input">
+                            <label for="radio2" class="radio-label">RTU Client Mode</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container button-config mode">
+                    <button class="button left-button" id="next-button">Next</button>
+                    <button class="button right-button" id="previous-button">Previous</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

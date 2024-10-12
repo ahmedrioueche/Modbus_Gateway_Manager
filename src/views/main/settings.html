@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Modbus Gateway Manager - Settings</title>
+    <link rel="stylesheet" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../../utils/data.js"></script>
+    <script defer src="../../utils/language.js"></script>
+    <script defer type="module" src="../../controller/main/settings.js"></script>
+</head>
+
+<body>
+    <div class="settings-window">
+        <h2>Settings</h2>
+        <div class="settings-container">
+            <div class="settings-content">
+                <button class="sett-btn" id="username-btn">
+                    <img src="../../assets/icons/triangle-down.png" class="icon sett-icon" id="toggle-icon-1"/>
+                    <span class="username-btn-span">Change Username</span>
+                </button>
+                <div class="username-div" id="setting-div">
+                    <div class="input-item" id="username-container">
+                        <label for="username" class="input-label settings" id="username-label">Username:</label>
+                        <input type="text" id="username" class="input-field" placeholder="Enter username">
+                    </div>
+                    <div class="input-item" id="old-password-container">
+                        <label for="old-password" class="input-label settings" id="password-label">Password:</label>
+                        <input type="password" id="old-password-1" class="input-field" placeholder="Enter password">
+                    </div>
+                </div>
+                <button class="sett-btn"  id="password-btn">
+                    <img src="../../assets/icons/triangle-down.png" class="icon sett-icon" id="toggle-icon-2"/>
+                    <span class="password-btn-span">Change Password</span>
+                </button>
+                <div class="password-div" id="setting-div">
+                    <div class="input-item" id="old-password-container-2">
+                        <label for="old-password" class="input-label settings" id="old-password-label">Old Password:</label>
+                        <input type="password" id="old-password-2" class="input-field" placeholder="Enter old password">
+                    </div>
+            
+                    <div class="input-item" id="new-container">
+                        <label for="new-password" class="input-label settings" id="new-password-label">New Password:</label>
+                        <input type="password" id="new-password" class="input-field" placeholder="Enter new password">
+                    </div>
+            
+                    <div class="input-item" id="confirm-container">
+                        <label for="confirm-password" class="input-label settings" id="confirm-password-label">Confirm Password:</label>
+                        <input type="password" id="confirm-password" class="input-field" placeholder="Confirm new password">
+                    </div>
+                </div>
+                <button class="sett-btn" id="language-btn">
+                    <img src="../../assets/icons/triangle-down.png" class="icon sett-icon" id="toggle-icon-3"/>
+                    <span class="language-btn-span">Change Language</span>
+                </button>
+                <div class="language-div" id="setting-div">
+                    <div class="input-item" >
+                        <label for="language-select" class="input-label settings" id="choose-lang-label">Choose Language:</label>
+                        <select name="" id="language-select" class="select-field">
+                                <option value="english">English</option>
+                                <option value="french">Francais</option>
+                                <option value="spanish">Espangol</option>
+                        </select>
+                    </div>
+                </div>   
+            </div>
+            <div class="button-container settings">
+                <button class="button left-button" id="save-button" type="submit">Save</button>
+                <button class="button right-button" id="cancel-button">Cancel</button>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>
